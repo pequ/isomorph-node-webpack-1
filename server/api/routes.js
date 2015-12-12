@@ -1,12 +1,13 @@
-import { users } from './data.json';
+import { users } from './users.json';
+import { sections } from './sections.json';
 
-const simplifyUsers = (collection) => collection
+const simplifyData = (collection) => collection
   .map(({ user, seed }) => ({ ...user, seed }))
   .map(({ email, name, seed, picture }) => ({ email, name, seed, picture }));
 
 export default function(router) {
   router.get('/users', function *() {
-    this.body = simplifyUsers(users.slice(0, 10));
+    this.body = simplifyData(users.slice(0, 10));
   });
 
   router.get('/users/:seed', function *() {

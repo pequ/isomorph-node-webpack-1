@@ -68,11 +68,6 @@ class Header extends Component {
                   { this.i18n('header.guides') }
                 </Link>
               </li>
-              <li role='presentation'>
-                <Link to={ this.i18n('routes.sections') } role='button'>
-                  { this.i18n('header.sections') }
-                </Link>
-              </li>
               { session ?
                 [
                   <li key={ 0 }>

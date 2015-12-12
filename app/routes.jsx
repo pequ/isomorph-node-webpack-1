@@ -17,12 +17,12 @@ export default function(flux) { /* eslint react/display-name: 0 */
         onEnter: isConnected(flux)
       }) }
       { generateRoute({
-        paths: ['/guides'],
-        component: require('./components/guides')
-      }) }
-      { generateRoute({
         paths: ['/sections'],
         component: require('./components/sections')
+      }) }
+      { generateRoute({
+        paths: ['/guides'],
+        component: require('./components/guides')
       }) }
       { generateRoute({
         paths: ['/profile/:seed', '/profil/:seed'],

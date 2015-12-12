@@ -3,7 +3,6 @@ export default {
     header: {
       users: 'Users List',
       guides: 'Guides',
-      sections: 'Sections',
       account: 'Account',
       logout: 'Logout',
       login: 'Login'
@@ -11,15 +10,15 @@ export default {
     guides: {
       'page-title': 'Guides'
     },
-    sections: {
-      'page-title': 'Sections'
-    },
     protected: {
       'page-title': 'Protected Page'
     },
     profile: {
       'page-title': 'Profile - {fullName}',
       'not-found-page-title': 'User profile not found'
+    },
+    section: {
+      'page-title': 'ja'
     },
     users: {
       'page-title': 'Users',
@@ -44,6 +43,7 @@ export default {
       users: '/users',
       guides: '/guides',
       sections: '/sections',
+      section: '/sections/:id',
       login: '/login',
       profile: '/profile/:seed',
       account: '/account'
